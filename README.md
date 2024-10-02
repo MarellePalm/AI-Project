@@ -9,6 +9,6 @@ Siim Nurja , TA-24 <br>
 Karl Erik Truumure , TA-24 <br>
 Mikhail Kucherenko , TA-24 <br>
 Marelle Palm , TA-24 <br>
-<p> Esimene päev. 
+<p> Esimene päev. <br>
   Marelle ja Mihail täitsid readme´d (repot). Juhan ja Kristofer leidsid AI abil infot Natural Language Processing kohta. 
   Kert, Marek, Mardo ja Karl Eerik mängisid Ocean AI'ga </p>
