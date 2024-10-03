@@ -1,6 +1,5 @@
 import { useState } from "react"
 import Card from "./components/Card"
-import { auth } from "./FirebaseConfig"
 
 interface Expense {
   name: string
@@ -10,8 +9,8 @@ interface Expense {
 function MainPage() {
   const [people, setPeople] = useState<string[]>(["aadu", "beedu"])
   const [expenses, setExpenses] = useState<Expense[]>([{
-    name: "bruh",
-    cost: 99
+    name: "hitman",
+    cost: 10000
   }])
   const [nameField, setNameField] = useState<string>("")
   const [descField, setDescField] = useState<string>("")
@@ -63,8 +62,12 @@ function MainPage() {
     }
   }
 
+  function roundCost(num: number) {
+    return Math.round(num * 100) / 100
+  }
+
   return (
-    <div className="flex flex-col gap-4 my-6">
+    <div className="flex flex-col gap-4 py-6">
       <Card title={"Add People"} className={"bg-containerBlue text-onContainerBlue"}>
         <div className="flex justify-between gap-2">
           <input type="text" value={nameField} onChange={(e) => setNameField(e.target.value)} placeholder="Enter Name" className="p-2 w-full border-2 border-solid border-[#00000020] rounded-md" />
@@ -104,7 +107,7 @@ function MainPage() {
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
             {people.map((dude, i) =>
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <input type="checkbox" onChange={() => handleCheckbox(i)} checked={enabledUsers.includes(i)} />
                 <p>{dude}</p>
               </div>
@@ -114,7 +117,7 @@ function MainPage() {
 
           <div className="flex flex-col gap-2">
             {enabledUsers.map((x) =>
-              <p className="bg-containerPurple py-2 px-4 rounded-md">{people[x]} - €{expenses.reduce((sum, i) => sum + i.cost, 0) / enabledUsers.length}</p>
+              <p className="bg-containerPurple py-2 px-4 rounded-md">{people[x]} - €{roundCost(Math.round(expenses.reduce((sum, i) => sum + i.cost, 0) / enabledUsers.length))}</p>
             )}
           </div>
         </div>
