@@ -17,7 +17,7 @@ Marelle Palm , TA-24 <br>
   Kert, Marek, Mardo ja Karl Erik mängisid Ocean AI'ga </p>
 
 Teine päev 03.10.24  
-Me küsisime AI (chatgPT) abi, et teha kulude jagamise äpp.  
+Me küsisime AI (chatGPT) abi, et teha kulude jagamise äpp.  
 See andis algse koodi, kuidas seda teha.    
   Kasutasime algseks koodimiseks Claude AI, selle kaudu saime algfunktsiooni ja üldpildi kuidas
   me selle loome.
