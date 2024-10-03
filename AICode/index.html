@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let me count</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #c3c3c3;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        input, button, select {
+            margin:  10px 10px 10px 0;
+            padding: 10px;
+            width: 90%;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+        
+        button {
+            background-color: #43b45d;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .list-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .remove-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            margin-left: 10px; 
+        }
+        .remove-btn:hover {
+            background-color: #c82333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        .history {
+            margin-top: 20px;
+        }
+        .item-with-remove {
+            display: flex;
+            align-items: center;
+        }
+        .expense-summary {
+            margin-top: 10px; 
+        }
+        #participantsContainer, #expensesContainer {
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 10px;
+        }     
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Let me count</h1>
+
+        <!-- Графа для имен -->
+        <label for="participantName">Add or Select a name:</label>
+        <input type="text" id="participantName" placeholder="Enter new participant name">
+        <div id="participantsContainer"></div>
+        <button onclick="addParticipant()">Add name</button>
+
+        <!-- Графа для названия расходов -->
+        <label for="expenseName">Add or Select an expense:</label>
+        <input type="text" id="expenseName" placeholder="Enter new expense name">
+        <div id="expensesContainer"></div>
+        <button onclick="addExpense()">Add Expense</button>
+
+        <!-- Графа для введения расходов -->
+        <label for="expenseAmount">Enter expense amount:</label>
+        <input type="number" id="expenseAmount" placeholder="Enter amount">
+
+        <button onclick="recordExpense()">Record Expense</button>
+
+        
+
+        <!-- История расходов -->
+        <h3>Expense History:</h3>
+        <ul id="expenseHistory" class="list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
