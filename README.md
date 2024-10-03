@@ -42,6 +42,16 @@ Marelle tegi teiste poolt saadetud info kohta esitluse.
  <ul> 
   <li><a href = "https://claude.ai/new"> Claude </a></li>
   <li><a href = "https://openai.com/chatgpt/">Chatgpt</a></li>
+   
+   Kasutasime algseks koodimiseks Claude AI, selle kaudu saime algfunktsiooni ja üldpildi kuidas me selle loome.
+  
+  Grupp jagunes:
+  Mikhail ja Marelle kirjutasid Ai abil äppi fronti. (Enda harjutuseks)
+  Ülejäänud liikmed tegelesid algselt Claude AI abil äppi loomisega ja liikusid eemale sellest kuna
+  sellel oli piiratud kasutus tasuta versioonil.
+  Kasutasime ka veel :(React, Firestore)
+  Üldkasutatud lehed: Github, Slack, Gemini, ChatGPT, Claude.
+  
  </ul>
 
   <h5>Projektiks kasutasime : JavaScript,HMTL,CSS</h5>
