@@ -72,6 +72,7 @@ function renderExpenses() {
         // Append the list item to the expense list
         expenseList.appendChild(listItem);
     });
+
 }
 
 // Initial render of participants
