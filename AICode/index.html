@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Split App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Split App</h1>
+       
+    </header>
+
+    <main>
+        <section class="participant-section">
+            <h2>Add Participant</h2>
+            <input type="text" id="participantName" placeholder="Participant Name">
+            <button onclick="addParticipant()">Add Participant</button>
+        </section>
+
+        <section class="expense-section">
+            <h2>Add Expense</h2>
+            <input type="text" id="expenseDescription" placeholder="Expense Description">
+            <input type="number" id="expenseAmount" placeholder="Amount (€)" min="0" step="0.01">
+            <h4>Select Participants:</h4>
+            <div id="participantCheckboxes"></div>
+            <button onclick="addExpense()">Add Expense</button>
+        </section>
+
+        <section class="expense-list">
+            <h2>Expenses</h2>
+            <ul id="expenseList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Expense Split App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

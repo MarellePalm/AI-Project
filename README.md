@@ -13,3 +13,8 @@ Marelle Palm , TA-24 <br>
   Marelle ja Mihail täitsid readme´d (repot). <br>
   Juhan ja Kristofer leidsid AI abil infot Natural Language Processing kohta. <br>
   Kert, Marek, Mardo ja Karl Eerik mängisid Ocean AI'ga </p>
+
+Teine päev 03.10.24  
+Me küsisime AI (chatgPT) abi, et teha kulude jagamise äpp.  
+See andis algse koodi, kuidas seda teha.  
+ 
