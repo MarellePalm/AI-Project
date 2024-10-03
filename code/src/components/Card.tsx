@@ -1,13 +1,12 @@
 import { ReactNode } from "react"
 
-interface CardProps {
-  children: ReactNode
-}
-
-function Card({ children }: CardProps) {
+function Card(props: { title: string, className: string, children: ReactNode }) {
   return (
     <div className="flex flex-col w-[400px] border-2 border-solid border-[#00000010] rounded-md">
-      {children}
+      <Header text={props.title} className={props.className} />
+      <div className="p-4">
+        {props.children}
+      </div>
     </div>
   )
 }
