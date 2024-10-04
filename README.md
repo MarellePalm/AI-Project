@@ -66,7 +66,7 @@ Projekti arendamisel kasutasime järgmisi tehnoloogiaid:
 - [Gemini](https://gemini.google.com/app)
 - [ChatGPT](https://chat.openai.com)
 - [Claude](https://www.claude.ai)
-- [Figma](figma.com)
+- [Figma](https://www.figma.com)
 
 ## Järeldus
 
