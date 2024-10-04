@@ -10,7 +10,7 @@ Karl Erik Truumure , TA-24 <br>
 Mikhail Kucherenko , TA-24 <br>
 Marelle Palm , TA-24 <br>
 <p> 
-  <h2>Esimene päev. 02.10.24</h2>
+  <h2>Esimene päev 02.10.24</h2>
 
  <h3>Esimene ülesanne</h3>
   <h5>Ülesande sisu</h5>
