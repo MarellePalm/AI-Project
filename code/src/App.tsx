@@ -8,8 +8,7 @@ function Protected(props: { children: ReactNode }) {
     const user = auth.currentUser
     console.log("protected")
     const isValid = user != null
-    console.log(isValid ? `user is valid email: $` : "user is nor valid");
-    
+    console.log(isValid ? `user is valid email: $` : "user is invalid");
     
     return !isValid ? <Navigate to="/"/> : props.children
 }
