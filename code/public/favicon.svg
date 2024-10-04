@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#FFD700"/>
+  
+  <!-- Duck body -->
+  <path d="M7 18c0-4.4 3.6-8 8-8s8 3.6 8 8v2c0 1.1-.9 2-2 2H9c-1.1 0-2-.9-2-2v-2z" fill="#FFFFFF"/>
+  
+  <!-- Duck head -->
+  <circle cx="15" cy="12" r="5" fill="#FFFFFF"/>
+  
+  <!-- Duck eye -->
+  <circle cx="14" cy="11" r="1" fill="#000000"/>
+  
+  <!-- Duck bill -->
+  <path d="M16 13l4 2v2h-4z" fill="#FFA500"/>
+</svg>
