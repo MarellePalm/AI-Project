@@ -1,7 +1,7 @@
 let participants = [];
 let expenses = [];
 
-// Добавить участника
+// Add user
 function addParticipant() {
     const participantInput = document.getElementById('participantName');
     const participantName = participantInput.value.trim();
@@ -9,14 +9,14 @@ function addParticipant() {
     if (participantName && !participants.includes(participantName)) {
         participants.push(participantName);
         updateParticipantsList();
-        participantInput.value = ''; // Очистить поле ввода
+        participantInput.value = ''; // clear input field
     }
 }
 
-// Обновить список участников
+// refresh name list
 function updateParticipantsList() {
     const participantsContainer = document.getElementById('participantsContainer');
-    participantsContainer.innerHTML = ''; // Очистить текущее содержимое
+    participantsContainer.innerHTML = ''; // clear current content
 
     participants.forEach(name => {
         const div = document.createElement('div');
@@ -26,20 +26,20 @@ function updateParticipantsList() {
         const removeBtn = document.createElement('button');
         removeBtn.textContent = '✖';
         removeBtn.className = 'remove-btn';
-        removeBtn.onclick = () => removeParticipant(name); // Удалить участника
+        removeBtn.onclick = () => removeParticipant(name); // remove name 
 
         div.appendChild(removeBtn);
         participantsContainer.appendChild(div);
     });
 }
 
-// Удалить участника
+// remove name 
 function removeParticipant(name) {
     participants = participants.filter(participant => participant !== name);
     updateParticipantsList();
 }
 
-// Добавить название расхода
+// add expense name
 function addExpense() {
     const expenseInput = document.getElementById('expenseName');
     const expenseName = expenseInput.value.trim();
@@ -47,14 +47,14 @@ function addExpense() {
     if (expenseName && !expenses.includes(expenseName)) {
         expenses.push(expenseName);
         updateExpensesList();
-        expenseInput.value = ''; // Очистить поле ввода
+        expenseInput.value = ''; // clear input field
     }
 }
 
-// Обновить список расходов
+// update expense list
 function updateExpensesList() {
     const expensesContainer = document.getElementById('expensesContainer');
-    expensesContainer.innerHTML = ''; // Очистить текущее содержимое
+    expensesContainer.innerHTML = ''; // Clear current content
 
     expenses.forEach(name => {
         const div = document.createElement('div');
@@ -64,46 +64,86 @@ function updateExpensesList() {
         const removeBtn = document.createElement('button');
         removeBtn.textContent = '✖';
         removeBtn.className = 'remove-btn';
-        removeBtn.onclick = () => removeExpense(name); // Удалить расход
+        removeBtn.onclick = () => removeExpense(name); // Delete expense
 
         div.appendChild(removeBtn);
         expensesContainer.appendChild(div);
     });
 }
 
-// Удалить название расхода
+// Delete expense name
 function removeExpense(name) {
     expenses = expenses.filter(expense => expense !== name);
     updateExpensesList();
 }
 
-// Записать расход
+// record the expense
 function recordExpense() {
     const expenseAmount = parseFloat(document.getElementById('expenseAmount').value);
-    
-    if (isNaN(expenseAmount) || participants.length === 0 || expenses.length === 0) {
-        alert('Please enter a valid amount and ensure you have participants and expenses added.');
+
+    // Check if the amount has been entered
+    if (isNaN(expenseAmount) || expenseAmount <= 0) {
+        alert('Please enter a valid expense amount.');
         return;
     }
 
-    const expenseName = expenses[expenses.length - 1];  // Последний добавленный расход
-    const perPersonAmount = expenseAmount / participants.length;
+    // Check if members have been added
+    if (participants.length === 0) {
+        alert('Please add at least one participant.');
+        return;
+    }
 
-    // Добавить в историю
+    // Check if expenses have been added
+    if (expenses.length === 0) {
+        alert('Please add at least one expense.');
+        return;
+    }
+
+    const expenseName = expenses[expenses.length - 1];  // Last added expense
+    const perPersonAmount = (expenseAmount / participants.length).toFixed(2); // Share per person
+
+    // Comma separated list of participants
+    const participantsList = participants.join(', ');
+
+    // Add to history
     const historyList = document.getElementById('expenseHistory');
     const historyItem = document.createElement('li');
+    historyItem.classList.add('list-item');
     historyItem.innerHTML = `
-        Expense: ${expenseName}, Amount: ${expenseAmount}, Per Person: ${perPersonAmount.toFixed(2)}
+    <div>
+        <strong>Expense:</strong> <strong>${expenseName}</strong><br>
+        <strong>Amount:</strong> ${expenseAmount.toFixed(2)}€<br>
+        <strong>Between ${participants.length} people (${participantsList})</strong><br>
+        <strong>Per person:</strong> ${perPersonAmount}€
+        </div>
         <button class="remove-btn" onclick="removeHistoryItem(this)">✖</button>
     `;
     historyList.appendChild(historyItem);
 
-    // Очистить поле ввода для суммы
+    // Clear input field for amount
     document.getElementById('expenseAmount').value = '';
 }
 
-// Удалить элемент из истории
+
+// Remove item from history
 function removeHistoryItem(button) {
     const historyItem = button.parentElement;
     historyItem.remove();
 }
+//enter input capability
+document.getElementById('participantName').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        addParticipant();
+    }
+});
+
+document.getElementById('expenseName').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        addExpense();
+    }
+}); 
+document.getElementById('expenseAmount').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        recordExpense();
+    }
+}); 

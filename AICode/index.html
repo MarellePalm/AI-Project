@@ -36,10 +36,11 @@
         }
         .list {
             list-style-type: none;
-            padding: 0;
+            padding: 10px;
         }
         .list-item {
             display: flex;
+            justify-content: space-between;
             align-items: center;
             padding: 10px;
             background-color: #f9f9f9;
@@ -99,19 +100,19 @@
     <div class="container">
         <h1>Let me count</h1>
 
-        <!-- Графа для имен -->
+        <!-- column for names -->
         <label for="participantName">Add or Select a name:</label>
-        <input type="text" id="participantName" placeholder="Enter new participant name">
+        <input type="text" id="participantName" placeholder="Enter new name">
         <div id="participantsContainer"></div>
         <button onclick="addParticipant()">Add name</button>
 
-        <!-- Графа для названия расходов -->
+        <!-- column for expense name -->
         <label for="expenseName">Add or Select an expense:</label>
-        <input type="text" id="expenseName" placeholder="Enter new expense name">
+        <input type="text" id="expenseName" placeholder="Enter new expense">
         <div id="expensesContainer"></div>
         <button onclick="addExpense()">Add Expense</button>
 
-        <!-- Графа для введения расходов -->
+        <!-- column for amount -->
         <label for="expenseAmount">Enter expense amount:</label>
         <input type="number" id="expenseAmount" placeholder="Enter amount">
 
@@ -119,7 +120,7 @@
 
         
 
-        <!-- История расходов -->
+        <!-- expense history -->
         <h3>Expense History:</h3>
         <ul id="expenseHistory" class="list"></ul>
     </div>
