@@ -22,6 +22,11 @@ NLP ehk loomulik keele töötlus (Natural Language Processing) on tehisintellekt
 </p>
 <p> 
   <h3>Teine ülesanne</h3>
+    <h5>Lingid</h5>
+ <ul> 
+   <li> <a href= "https://gemini.google.com/app"> Gemini</a> </li>
+  <li> <a href = "https://openai.com/chatgpt/"> Chatgpt</a> </li>
+ </ul>  
   <h5>Ülesande sisu</h5>
 Kõik koos uurisime chatGPT ja Gemini käest autoriõiguste kohta. Valisime ühe kindlama teema.<br>
 Kristofer, Juhan, Mihail ja Karl Erik küsisid chatGPT käest Kuidas AI loodud teosed sobituvad autoriõiguse raamistikku? <br>
@@ -34,10 +39,6 @@ Marelle tegi teiste poolt saadetud info kohta esitluse.
   <h3>Expense Splitter App</h3>
   <h4> Eesmärk</h4>
   Projekti eesmärk on luua äpp, kus sõpradel või toakaaslastel on võimalik arveid ja kulusid jagada. Kes võlgneb kellele, kui palju ja arveid saata.  
-  <h5>Lingid</h5>
- <ul> 
-  <li><a href = "https://claude.ai/new"> Claude </a></li>
-  <li><a href = "https://openai.com/chatgpt/">Chatgpt</a></li>
    
    Kasutasime algseks koodimiseks Claude AI, selle kaudu saime algfunktsiooni ja üldpildi kuidas me selle loome.
 
