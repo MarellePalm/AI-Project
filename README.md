@@ -58,7 +58,7 @@ Projekti arendamisel kasutasime järgmisi tehnoloogiaid:
 
 - [GitHub](https://github.com)
 - [Slack](https://slack.com)
-- [Gemini](https://gemini.google.com/)
+- [Gemini](https://gemini.google.com/app)
 - [ChatGPT](https://chat.openai.com)
 - [Claude](https://www.claude.ai)
 
