@@ -31,7 +31,7 @@ NLP ehk loomulik keele töötlus (Natural Language Processing) on tehisintellekt
 Kõik koos uurisime chatGPT ja Gemini käest autoriõiguste kohta. Valisime ühe kindlama teema.<br>
 Kristofer, Juhan, Mihail ja Karl Erik küsisid chatGPT käest Kuidas AI loodud teosed sobituvad autoriõiguse raamistikku? <br>
 Kert,Marek, Mardo küsisid sama asja Gemini käest. <br>
-Võrdlesime neid. Marelle kontrollis chatGPT käest saadud seaduse punkti riigiteatajast. Leidis, et sedadus oli õige aga paragrahv oli vale. <br>
+Võrdlesime neid. Marelle kontrollis chatGPT käest saadud seaduse punkti riigiteatajast. Leidis, et seadus oli õige aga paragrahv oli vale. <br>
 Marelle tegi teiste poolt saadetud info kohta esitluse. 
 </p>
 <p>
