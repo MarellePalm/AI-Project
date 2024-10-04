@@ -38,6 +38,7 @@ function MainPage() {
     const newPeople = [...people, nameField]
     setPeople(newPeople)
     localStorage.setItem(keys.people, JSON.stringify(newPeople))
+    setNameField("")
   }
 
   function handleAddExpense() {
@@ -51,6 +52,9 @@ function MainPage() {
     const newExpenses = [...expenses, expense]
     setExpenses(newExpenses)
     localStorage.setItem(keys.expenses, JSON.stringify(newExpenses))
+
+    setDescField("")
+    setAmountField("")
   }
 
   function removeUser(index: number) {
