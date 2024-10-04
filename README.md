@@ -51,7 +51,7 @@ Marelle Palm , TA-24 <br>
 - **Karl Erik** täitis üldinfot ja proovis tegeleda edasi Claude AI abil äppi loomisega.
 - **Kert** ja **Marek** tegelesid juhendamisega gruppis.
 - **Juhan** tegi Figmas äppile disaini.
-- **Mardo** Puudus eile, aga vaatas üle koodi, et kõik oleks arusaadav ja hästi kirjutatud.
+- **Mardo** puudus eile, aga vaatas üle koodi, et kõik oleks arusaadav ja hästi kirjutatud.
 
 ## Tehnoloogiad
 
