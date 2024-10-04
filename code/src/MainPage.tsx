@@ -64,7 +64,7 @@ function MainPage() {
   }
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 my-6">
       <Card title={"Add People"} className={"bg-containerBlue text-onContainerBlue"}>
         <div className="flex justify-between gap-2">
           <input type="text" value={nameField} onChange={(e) => setNameField(e.target.value)} placeholder="Enter Name" className="p-2 w-full border-2 border-solid border-[#00000020] rounded-md" />
