@@ -1,5 +1,11 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Card from "./components/Card"
+
+const keys = {
+  people: "data-users",
+  enabledUsers: "data-enabled",
+  expenses: "data-expenses"
+}
 
 interface Expense {
   name: string
@@ -8,20 +14,31 @@ interface Expense {
 
 function MainPage() {
   const [people, setPeople] = useState<string[]>(["aadu", "beedu"])
-  const [expenses, setExpenses] = useState<Expense[]>([{
-    name: "hitman",
-    cost: 10000
-  }])
+  const [expenses, setExpenses] = useState<Expense[]>([])
   const [nameField, setNameField] = useState<string>("")
   const [descField, setDescField] = useState<string>("")
   const [amountField, setAmountField] = useState<string>("")
   const [enabledUsers, setEnabledUsers] = useState<number[]>([])
 
+  useEffect(() => {
+    const localPeople = localStorage.getItem(keys.people)
+    const localEnabledPeople = localStorage.getItem(keys.enabledUsers)
+    const localExpenses = localStorage.getItem(keys.expenses)
+    console.log(localPeople);
+    console.log(localEnabledPeople);
+    console.log(localExpenses);
+    const parse = (str: string) => JSON.parse(str)
+
+    if (localPeople != null) setPeople(parse(localPeople))
+    if (localEnabledPeople != null) setEnabledUsers(parse(localEnabledPeople))
+    if (localExpenses != null) setExpenses(parse(localExpenses))
+  }, [])
+
   function handleAddUser() {
-    setPeople([...people, nameField])
-
-    console.log(people);
-
+    const newPeople = [...people, nameField]
+    setPeople(newPeople)
+    localStorage.setItem(keys.people, JSON.stringify(newPeople))
+    setNameField("")
   }
 
   function handleAddExpense() {
@@ -32,34 +49,49 @@ function MainPage() {
       cost: isNaN(num) ? 0 : num,
     }
 
-    setExpenses([...expenses, expense])
+    const newExpenses = [...expenses, expense]
+    setExpenses(newExpenses)
+    localStorage.setItem(keys.expenses, JSON.stringify(newExpenses))
 
-    console.log(expenses);
-
+    setDescField("")
+    setAmountField("")
   }
 
   function removeUser(index: number) {
-    setPeople(people.filter((_, i) => i != index))
-    setEnabledUsers(enabledUsers
+    const newPeople = people.filter((_, i) => i != index)
+    const newEnabled = enabledUsers
       .filter((_, i) => {
         return i != index
       })
       .map((x) => {
         if (x > index) return x - 1
         return x
-      }))
+      })
+
+      setPeople(newPeople)
+      setEnabledUsers(newEnabled)
+
+      localStorage.setItem(keys.people, JSON.stringify(newPeople))
+      localStorage.setItem(keys.enabledUsers, JSON.stringify(newEnabled))
   }
 
   function removeExpense(index: number) {
-    setExpenses(expenses.filter((_, i) => i != index))
+    const newExpenses = expenses.filter((_, i) => i != index)
+    setExpenses(newExpenses)
+    localStorage.setItem(keys.expenses, JSON.stringify(newExpenses))
   }
 
   function handleCheckbox(index: number) {
+    let newEnabled
     if (enabledUsers.includes(index)) {
-      setEnabledUsers(enabledUsers.filter((_, i) => i != index))
+      newEnabled = enabledUsers.filter((_, i) => i != index)
+      setEnabledUsers(newEnabled)
     } else {
-      setEnabledUsers([...enabledUsers, index])
+      newEnabled = [...enabledUsers, index]
+      setEnabledUsers(newEnabled)
     }
+
+    localStorage.setItem(keys.enabledUsers, JSON.stringify(newEnabled))
   }
 
   function roundCost(num: number) {
