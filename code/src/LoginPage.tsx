@@ -27,7 +27,7 @@ function LoginPage() {
             </div>
             <div className="gap-4 flex flex-col w-[325px] mt-12">
                 {error && <p>{error}</p>}
-                <input type="email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Email" className="p-3.5 text-md w-full rounded-md bg-[#F1F4FF] border-2 border-solid border-onContainerBlue" />
+                <input type="email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Email" className="p-3.5 text-md w-full rounded-md bg-[#F1F4FF] focus:border-2 border-solid border-onContainerBlue" />
                 <input type="password" onChange={(e) => setPassword(e.target.value)} value={password} placeholder="Password" className="p-3.5 text-md w-full rounded-md bg-[#F1F4FF] focus:border-2 border-solid border-onContainerBlue" />
             </div>
             <button onClick={handleLogin} className="bg-onContainerBlue w-full py-3.5 text-xl text-white rounded-md mt-12">Sign in</button>
