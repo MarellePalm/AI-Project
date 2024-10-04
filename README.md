@@ -11,11 +11,7 @@ Mikhail Kucherenko , TA-24 <br>
 Marelle Palm , TA-24 <br>
 <p> 
   <h2>Esimene päev. 02.10.24</h2>
-  <h5>Lingid</h5>
- <ul> 
-   <li> <a href= "https://gemini.google.com/app"> Gemini</a> </li>
-  <li> <a href = "https://openai.com/chatgpt/"> Chatgpt</a> </li>
- </ul>  
+
  <h3>Esimene ülesanne</h3>
   <h5>Ülesande sisu</h5>
   Marelle ja Mihail täitsid readme´d (repot). <br>
