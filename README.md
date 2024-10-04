@@ -49,7 +49,8 @@ Marelle Palm , TA-24 <br>
   ja aeglustas meie tööd.
 - **Juhan**, **Kert**, **Marek**, **Kristofer** tegelesid kogu split äppi töötlemisega.
 - **Karl Erik** täitis üldinfot ja proovis tegeleda edasi Claude AI abil äppi loomisega.
-- **Kert** ja **Marek** tegelesid juhendamisega gruppis
+- **Kert** ja **Marek** tegelesid juhendamisega gruppis.
+- **Juhan** tegi Figmas äppile disaini.
 
 ## Tehnoloogiad
 
@@ -65,6 +66,7 @@ Projekti arendamisel kasutasime järgmisi tehnoloogiaid:
 - [Gemini](https://gemini.google.com/app)
 - [ChatGPT](https://chat.openai.com)
 - [Claude](https://www.claude.ai)
+- [Figma](figma.com)
 
 ## Järeldus
 
