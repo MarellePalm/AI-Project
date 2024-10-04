@@ -68,6 +68,7 @@ Projekti arendamisel kasutasime järgmisi tehnoloogiaid:
 - [ChatGPT](https://chat.openai.com)
 - [Claude](https://www.claude.ai)
 - [Figma](https://www.figma.com)
+- [Zone](https://tak23mand.itmajakas.ee/)
 
 ## Järeldus
 
