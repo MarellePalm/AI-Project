@@ -14,11 +14,11 @@ Marelle Palm , TA-24 <br>
 
  <h3>Esimene ülesanne</h3>
   <h5>Ülesande sisu</h5>
-  Marelle ja Mihail täitsid readme´d (repot). <br>
-  Juhan ja Kristofer leidsid AI abil infot Natural Language Processing kohta. <br>
-  Kert, Marek, Mardo ja Karl Erik mängisid Ocean AI'ga<br>
-  Tutvustasime teistele AI alavaldkonda NLP- Natural language processing. <br>
-NLP ehk loomulik keele töötlus (Natural Language Processing) on tehisintellekti haru, mis keskendub inimkeele ja arvutite vahelise suhtluse mõistmisele, töötlemisele ja genereerimisele. NLP eesmärk on võimaldada arvutitel mõista, tõlgendada ja manipuleerida inimkeelt, olgu selleks kõne või kirjalik tekst. <br>
+- Marelle ja Mihail täitsid readme´d (repot). <br>
+- Juhan ja Kristofer leidsid AI abil infot Natural Language Processing kohta. <br>
+- Kert, Marek, Mardo ja Karl Erik mängisid Ocean AI'ga<br>
+- Tutvustasime teistele AI alavaldkonda NLP- Natural language processing. <br>
+- NLP ehk loomulik keele töötlus (Natural Language Processing) on tehisintellekti haru, mis keskendub inimkeele ja arvutite vahelise suhtluse mõistmisele, töötlemisele ja genereerimisele. NLP eesmärk on võimaldada arvutitel mõista, tõlgendada ja manipuleerida inimkeelt, olgu selleks kõne või kirjalik tekst. <br>
 </p>
 <p> 
   <h3>Teine ülesanne</h3>
@@ -28,11 +28,11 @@ NLP ehk loomulik keele töötlus (Natural Language Processing) on tehisintellekt
   <li> <a href = "https://openai.com/chatgpt/"> Chatgpt</a> </li>
  </ul>  
   <h5>Ülesande sisu</h5>
-Kõik koos uurisime chatGPT ja Gemini käest autoriõiguste kohta. Valisime ühe kindlama teema.<br>
-Kristofer, Juhan, Mihail ja Karl Erik küsisid chatGPT käest Kuidas AI loodud teosed sobituvad autoriõiguse raamistikku? <br>
-Kert,Marek, Mardo küsisid sama asja Gemini käest. <br>
-Võrdlesime neid. Marelle kontrollis chatGPT käest saadud seaduse punkti riigiteatajast. Leidis, et seadus oli õige aga paragrahv oli vale. <br>
-Marelle tegi teiste poolt saadetud info kohta esitluse. 
+- Kõik koos uurisime chatGPT ja Gemini käest autoriõiguste kohta. Valisime ühe kindlama teema.<br>
+- Kristofer, Juhan, Mihail ja Karl Erik küsisid chatGPT käest Kuidas AI loodud teosed sobituvad autoriõiguse raamistikku? <br>
+- Kert ,Marek, Mardo küsisid sama asja Gemini käest. <br>
+- Võrdlesime neid. Marelle kontrollis chatGPT käest saadud seaduse punkti riigiteatajast. Leidis, et seadus oli õige aga paragrahv oli vale. <br>
+- Marelle tegi teiste poolt saadetud info kohta esitluse. 
 </p>
 <p>
   <h2>Teine päev 03.10.2024</h2>
@@ -45,7 +45,11 @@ Marelle tegi teiste poolt saadetud info kohta esitluse.
 ## Grupiliikmed
 
 - **Mikhail** ja **Marelle**: Kirjutasid AI abil äppi fronti (enda harjutuseks).
-- Ülejäänud liikmed: Alguses tegelesid Claude AI abil äppi loomisega, kuid liikusid eemale sellest, kuna tasuta versioonil oli piiratud kasutus.
+- Ülejäänud liikmed: Alguses tegelesid Claude AI abil äppi loomisega, kuid liikusid eemale sellest, kuna tasuta versioonil oli piiratud kasutus
+  ja aeglustas meie tööd.
+- **Juhan**, **Kert**, **Marek**, **Kristofer** tegelesid kogu split äppi töötlemisega.
+- **Karl Erik** täitis üldinfot ja proovis tegeleda edasi Claude AI abil äppi loomisega.
+- **Kert** ja **Marek** tegelesid juhendamisega gruppis
 
 ## Tehnoloogiad
 
